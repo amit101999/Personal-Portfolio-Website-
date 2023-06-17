@@ -1,0 +1,197 @@
+:root {
+  --loginPage-text-color: #3c3b40;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.login,
+.register {
+  overflow: hidden;
+}
+.background-container {
+  display: flex;
+  overflow: hidden;
+  width: 100vw;
+  transform: rotateZ(25deg) scale(1.2);
+  translate: -50px -170px;
+}
+
+.first-color,
+.second-color,
+.third-color,
+.fourth-color {
+  width: 100vw;
+  height: 200vh;
+}
+
+.first-color {
+  background: #defcf9;
+}
+
+.second-color {
+  background: #cadefc;
+}
+
+.third-color {
+  background: #c3bef0;
+}
+
+.fourth-color {
+  background: #cca8e9;
+}
+
+.login-page {
+  position: absolute;
+  left: 150px;
+  top: 50px;
+  box-shadow: 10px 10px 15px 12px grey;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border-radius: 20px;
+  display: flex;
+}
+
+.login-page-image,
+.login-details {
+  flex-basis: 50%;
+  background-color: white;
+  position: relative;
+}
+
+.login-details {
+  padding: 30px;
+}
+.user-details {
+  position: relative;
+}
+
+form {
+  margin: 50px 0 0px 30px;
+}
+
+.app-tagline {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+  color: var(--loginPage-text-color);
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+}
+
+form > div {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+form {
+  position: inherit;
+  animation: UserCredentials 2s ease-in-out 1;
+}
+
+form > div :first-child {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  color: #3c3b40;
+  font-weight: bolder;
+}
+
+form > div input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  height: 30px;
+  outline-style: none;
+  font-size: 20px;
+}
+
+.submitBtn {
+  background-color: #20b9c5;
+  width: 80%;
+  height: 40px;
+  border: none;
+  margin: 0px 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.RegsubmitBtn {
+  background-color: #20b9c5;
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.login-detail hr {
+  margin: 0 10px;
+  font-size: 2px;
+}
+
+.forgot-password p {
+  text-align: right;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+hr {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+.regHr {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+
+.create-account p {
+  margin: 30px 90px;
+  font-size: 17px;
+  font-weight: bolder;
+  color: --loginPage-text-color;
+}
+.login-account p {
+  margin: 20px 90px;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.login-img {
+  width: 100%;
+  height: 100%;
+  animation: authImagAnimaton 2s ease-in-out;
+}
+
+@keyframes UserCredentials {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes authImagAnimaton {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
